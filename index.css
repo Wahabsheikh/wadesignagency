@@ -1,0 +1,261 @@
+@font-face {
+    font-family: myFont;
+    src: url(./assets/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: cabin;
+    src: url(./assets/Cabin/Cabin-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: mukta;
+    src: url(./assets/Mukta/Mukta-Bold.ttf);
+}
+
+:root {
+    --Red: Red;
+    --fontLight: white;
+    --fontDark: black;
+    --fontDarkGrey: #151823;
+    --list-grey: #666666;
+    --light-grey: rgb(218, 218, 218);
+}
+
+/* gernal css */
+.wa-btn {
+    font-family: myFont;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 2px solid var(--Red);
+    background-color: var(--fontDark);
+    color: var(--fontLight);
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.wa-btn:hover {
+
+    background-color: var(--Red);
+    transition: all 0.5s ease;
+    font-weight: bold;
+
+}
+
+.fa-search {
+    color: var(--fontLight);
+    margin-left: -85px
+}
+
+#header .navbar {
+    padding: 30px 10px;
+}
+
+#header .my-dark {
+    background-color: var(--fontDarkGrey);
+
+}
+
+#header .navbar-nav li {
+    /* margin-left: 15px; */
+}
+
+#header .logo img {
+    width: 150px;
+}
+
+
+#header .navbar-nav .nav-link {
+    font-family: myFont;
+    font-size: 18px;
+    color: var(--fontLight);
+    text-transform: capitalize;
+    line-height: 10px;
+    border-bottom: 3px solid var(--fontDarkGrey);
+
+}
+
+#header .navbar-nav .nav-link:hover,
+#header .navbar-nav .nav-link:active {
+    color: var(--Red);
+    animation: slider 0.5s ease;
+    line-height: 10px;
+    border-bottom: 3px solid var(--Red);
+    width: 40%;
+
+}
+
+@keyframes slider {
+
+    10% {
+        border-bottom: 3px solid var(--Red);
+        width: 10%;
+        line-height: 10px;
+
+    }
+
+    20% {
+        border-bottom: 3px solid var(--Red);
+        width: 20%;
+        line-height: 10px;
+
+    }
+
+    30% {
+        border-bottom: 3px solid var(--Red);
+        width: 30%;
+        line-height: 10px;
+
+    }
+
+    40% {
+        border-bottom: 3px solid var(--Red);
+        width: 40%;
+        line-height: 10px;
+
+    }
+}
+
+
+
+#header .list-group {
+    display: none;
+
+    /* width: 500px; */
+    max-height: 1000px;
+    padding: 0%;
+
+
+}
+
+
+#header .list-group .list-wrap {
+    margin-top: 25px;
+    width: 200px;
+
+}
+
+
+#header .nav-item:hover .list-group {
+    display: block;
+    width: 500px;
+    /* background-image: url(./assets/icon/1.png); */
+    background-color: var(--light-grey);
+    box-shadow: -2px 4px 5px var(--light-grey);
+    border-radius: 15px;
+
+}
+
+
+#header .nav-item:hover .list-group-item {
+    color: var(--list-grey);
+    border: none;
+    border-bottom: 2px solid var(--light-grey);
+    font-family: myFont;
+    text-transform: capitalize;
+    background-color: transparent;
+
+}
+
+#header .nav-item:hover .list-group-item:hover {
+    border-bottom: 1px solid var(--Red);
+    color: var(--fontDark);
+    cursor: pointer;
+}
+
+/* section home */
+
+#Home .home-contant {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#Home .home-contant img {
+    width: 100%;
+    height: 100%;
+}
+
+#Home .home-text-contant {
+    position: absolute;
+}
+
+#Home .home-text-contant h1 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-family: mukta;
+}
+#Home .home-text-contant h1 span{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-family: mukta;
+    color: var(--Red);
+}
+
+#Home .home-text-contant p {
+    text-transform: capitalize;
+    font-family: cabin;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+}
+
+/* section context */
+#context .context-contant h1{
+    font-family: mukta;
+    font-size: 3rem;
+    text-transform:capitalize ;
+}
+#context .context-contant span{
+color: var(--Red);
+}
+#context .context-contant p{
+    max-width: 800px;
+    text-transform: capitalize;
+    font-family: cabin;
+    color: var(--list-grey);
+
+
+
+}
+#context .context-text-sign{
+    padding: 80px 0;
+}
+#context .context-text-sign p{
+font-weight: bold;
+}
+
+/* your-work */
+#your-work img{
+    max-width: 170px;
+    max-height: 170px;
+    border-radius: 10px;
+
+}
+#your-work .project-house{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+
+}
+#your-work .project-wrapper{
+display: flex;
+position:relative;
+text-align: center;
+justify-content: center;
+align-items: center;
+color: var(--fontLight);
+text-transform: capitalize;
+
+}
+#your-work .project-wrapper :hover img {
+    transform: rotate(-0.25turn);
+}
+#your-work .project-wrapper .project-title{
+position: absolute;
+
+
+}
