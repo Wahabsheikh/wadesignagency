@@ -335,16 +335,45 @@
 
 #our-services .service-text-contant .servic-icon i::before {
     border: 2px solid var(--Red);
-    padding:20px ;
+    padding: 20px;
     border-radius: 100%;
 }
 
 #our-services .service-text-contant .servic-icon i {
     font-size: 1.8rem;
     margin-bottom: 30px;
-    
+
 }
-#our-services .service-text-contant .servic-icon i:hover{
-  color: var(--Red);
-    
+
+#our-services .service-text-contant .servic-icon i:hover {
+    color: var(--Red);
+
 }
+
+/* contact */
+#contact .container-fluid{
+    background-color: var(--fontDarkGrey);
+    padding: 60px 30px; 
+
+
+}
+#contact .context-text-contant h1{
+color: var(--fontLight);
+}
+#contact .context-text-contant p{
+    color: var(--fontLight);
+    }
+
+#contact .context-text-contant span{
+    color: var(--Red);
+
+}
+#contact .contact-image-wrapper img {
+    width: 400px;
+    border-radius: 0px 20px 20px 0px;
+
+}
+#contact .context-text-contant input ,#contact .context-text-contant textarea{
+    border-radius: 20px;
+}
+#contact .context-text-contant 
