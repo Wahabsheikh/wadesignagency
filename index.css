@@ -351,29 +351,74 @@
 }
 
 /* contact */
-#contact .container-fluid{
+#contact .container-fluid {
     background-color: var(--fontDarkGrey);
-    padding: 60px 30px; 
+    padding: 60px 30px;
 
 
 }
-#contact .context-text-contant h1{
-color: var(--fontLight);
-}
-#contact .context-text-contant p{
+
+#contact .context-text-contant h1 {
     color: var(--fontLight);
-    }
+}
 
-#contact .context-text-contant span{
+#contact .context-text-contant p {
+    color: var(--fontLight);
+}
+
+#contact .context-text-contant span {
     color: var(--Red);
 
 }
+
 #contact .contact-image-wrapper img {
     width: 400px;
     border-radius: 0px 20px 20px 0px;
 
 }
-#contact .context-text-contant input ,#contact .context-text-contant textarea{
+
+#contact .context-text-contant input,
+#contact .context-text-contant textarea {
     border-radius: 20px;
 }
-#contact .context-text-contant 
+
+/* #contact .context-text-contant  */
+
+
+/* teams */
+#teams {
+    padding: 30px 0;
+}
+
+/* #teams .item {} */
+
+/* #teams .owl-carousel img {
+    width: 170px;
+    border-radius: 10px;
+
+} */
+
+/* #teams .owl-carousel {
+    display: flex;
+    justify-content: space-around;
+} */
+
+#teams .teams-about {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#teams .teams-about h1 {
+    font-size: 36px;
+    text-transform: capitalize;
+
+}
+
+#teams .teams-about h1 span {
+    color: var(--Red);
+}
+
+#teams .teams-about p {
+    text-transform: capitalize;
+    color: var(--list-grey);
+}
