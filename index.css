@@ -403,22 +403,67 @@
     justify-content: space-around;
 } */
 
-#teams .teams-about {
+#teams .teams-about, #packages .teams-about  {
     text-align: center;
     padding: 30px 0;
 }
 
-#teams .teams-about h1 {
+#teams .teams-about h1, #packages .teams-about h1 {
     font-size: 36px;
     text-transform: capitalize;
 
 }
 
-#teams .teams-about h1 span {
+#teams .teams-about h1 span, #packages .teams-about h1 span {
     color: var(--Red);
 }
 
-#teams .teams-about p {
+#teams .teams-about p, #packages .teams-about p{
     text-transform: capitalize;
     color: var(--list-grey);
+}
+
+/* packages// */
+
+#pacages-card{
+display: flex;
+justify-content: space-around;
+padding: 30px 20px;
+
+
+}
+#pacages-card .packages-card{
+    /* background-color: var(--light-grey); */
+    background-image: url(./assets/icon/crea-tive.svg);
+    padding:  30px 20px;
+    text-align: center;
+   width: 300px;
+}
+#pacages-card .packages-card :nth-child(){
+    /* background-color: var(--light-grey); */
+    background-image: url(./assets/icon/crea-tive.svg);
+    padding:  30px 20px;
+    text-align: center;
+   width: 300px;
+}
+#pacages-card .packages-card img{
+ width: 20px;
+}
+
+#pacages-card h1{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+#pacages-card .price h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+#pacages-card .packages-list{
+    text-align: start;
+    padding: 10 20px;
+}
+#pacages-card .packages-list p{
+    margin-left: 20px;
+
 }
