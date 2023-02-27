@@ -23,12 +23,12 @@
 }
 
 /* gernal css */
-.wa-btn {
+.wa-white-btn {
     font-family: myFont;
     font-size: 18px;
     text-transform: capitalize;
     border: 2px solid var(--Red);
-    background-color: var(--fontDark);
+    background-color: transparent;
     color: var(--fontLight);
     padding: 10px 50px;
     border-radius: 30px;
@@ -37,7 +37,7 @@
 
 }
 
-.wa-white-btn {
+.wa-dark-btn {
     font-family: myFont;
     font-size: 18px;
     text-transform: capitalize;
@@ -59,7 +59,7 @@
 
 }
 
-.wa-btn:hover {
+.wa-dark-btn:hover {
 
     background-color: var(--Red);
     transition: all 0.5s ease;
@@ -358,15 +358,16 @@
 
 }
 
-#contact .context-text-contant h1 {
+#contact .context-text-contant h1, #updat-event .event-text-contant h1 {
     color: var(--fontLight);
 }
 
-#contact .context-text-contant p {
+#contact .context-text-contant p, #updat-event .event-text-contant p {
     color: var(--fontLight);
+    margin-bottom: 50px;
 }
 
-#contact .context-text-contant span {
+#contact .context-text-contant span, #updat-event .event-text-contant h1 span {
     color: var(--Red);
 
 }
@@ -390,77 +391,108 @@
     padding: 30px 0;
 }
 
-/* #teams .item {} */
-
-/* #teams .owl-carousel img {
-    width: 170px;
-    border-radius: 10px;
-
-} */
-
-/* #teams .owl-carousel {
-    display: flex;
-    justify-content: space-around;
-} */
-
-#teams .teams-about, #packages .teams-about  {
+#teams .teams-about,
+#packages .teams-about,
+#updat-event .event-text-contant,
+#recent-news .recent-news-contant {
     text-align: center;
     padding: 30px 0;
 }
 
-#teams .teams-about h1, #packages .teams-about h1 {
+#teams .teams-about h1,
+#packages .teams-about h1,
+#recent-news .recent-news-contant h1
+ {
     font-size: 36px;
     text-transform: capitalize;
 
 }
 
-#teams .teams-about h1 span, #packages .teams-about h1 span {
+#teams .teams-about h1 span,
+#packages .teams-about h1 span,
+#recent-news .recent-news-contant h1 span
+ {
     color: var(--Red);
 }
 
-#teams .teams-about p, #packages .teams-about p{
+#teams .teams-about p,
+#packages .teams-about p,
+#recent-news .recent-news-contant p
+ {
     text-transform: capitalize;
     color: var(--list-grey);
 }
 
 /* packages// */
 
-#pacages-card{
-display: flex;
-justify-content: space-around;
-padding: 30px 20px;
+#pacages-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
 
 
 }
-#pacages-card .packages-card{
-    background-color:var(--light-grey);
-    background-image:url(./assets/icon/teams/ecom_price.png);
-    padding:  30px 20px;
+
+#pacages-card .packages-card {
+    background-color: var(--light-grey);
+    background-image: url(./assets/icon/teams/ecom_price.png);
+    padding: 30px 20px;
     text-align: center;
-   width: 280px;
-   border-radius: 10px;
+    width: 280px;
+    border-radius: 10px;
 }
 
-#pacages-card .packages-card img{
- width: 20px;
+#pacages-card .packages-card img {
+    width: 20px;
 }
 
-#pacages-card h1{
+#pacages-card h1 {
     font-size: 1.5rem;
     text-transform: capitalize;
 
 }
-#pacages-card .price h1{
+
+#pacages-card .price h1 {
     font-weight: bold;
     font-size: 2rem;
 }
-#pacages-card .packages-list{
+
+#pacages-card .packages-list {
     text-align: start;
     padding: 10 20px;
 }
-#pacages-card .packages-list p{
+
+#pacages-card .packages-list p {
     margin-left: 20px;
     text-transform: capitalize;
     font-weight: bold;
 
+}
+/* event? */
+
+#updat-event .event-contant .form-event{
+display: flex;
+text-align: center;
+}
+#updat-event .event-contant{
+    background-image: url(./assets/icon/teams/3.jpg);
+    background-attachment: fixed;
+    padding: 100px 0;
+   
+}
+#updat-event .event-contant .input-group{
+    padding: 20px 200px;
+    margin-bottom: 30px;
+}
+#updat-event .event-contant .form {
+   display: flex;
+ }
+#updat-event .event-contant .form input{
+   border-radius: 50px;
+   margin-left: 220px;
+   margin-right: 50px;
+   width: 400px;
+   background-color: transparent;
+   text-align: center;
+   text-transform: capitalize;
 }
