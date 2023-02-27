@@ -186,7 +186,7 @@
 
 #header .nav-item:hover .list-group {
     display: block;
-    width: 500px;
+    /* width: 500px; */
     /* background-image: url(./assets/icon/1.png); */
     background-color: var(--light-grey);
     box-shadow: -2px 4px 5px var(--light-grey);
@@ -433,19 +433,14 @@ padding: 30px 20px;
 
 }
 #pacages-card .packages-card{
-    /* background-color: var(--light-grey); */
-    background-image: url(./assets/icon/crea-tive.svg);
+    background-color:var(--light-grey);
+    background-image:url(./assets/icon/teams/ecom_price.png);
     padding:  30px 20px;
     text-align: center;
-   width: 300px;
+   width: 280px;
+   border-radius: 10px;
 }
-#pacages-card .packages-card :nth-child(){
-    /* background-color: var(--light-grey); */
-    background-image: url(./assets/icon/crea-tive.svg);
-    padding:  30px 20px;
-    text-align: center;
-   width: 300px;
-}
+
 #pacages-card .packages-card img{
  width: 20px;
 }
@@ -465,5 +460,7 @@ padding: 30px 20px;
 }
 #pacages-card .packages-list p{
     margin-left: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
 
 }
