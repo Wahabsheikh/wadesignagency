@@ -67,6 +67,26 @@
 
 }
 
+.screenBtn {
+    width: 100%;
+    font-family: myFont;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 2px solid var(--Red);
+    color: var(--fontDark);
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.screenBtn:hover {
+    background-color: var(--Red);
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
 .read-more {
     text-transform: capitalize;
     font-size: 1rem;
@@ -284,12 +304,6 @@
 }
 
 /* your-work */
-#your-work img {
-    max-width: 170px;
-    max-height: 170px;
-    border-radius: 10px;
-
-}
 
 #your-work .project-house {
     display: flex;
@@ -306,16 +320,39 @@
     align-items: center;
     color: var(--fontLight);
     text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+
 
 }
 
-#your-work .project-wrapper :hover img {
-    transform: rotate(-0.25turn);
+
+#your-work .project-wrapper img {
+    transition: all 0.2s ease-in-out;
+    max-width: 190px;
+    max-height: 190px;
+    border-radius: 10px;
+    z-index: 100000;
+
+}
+
+#your-work .project-wrapper img:hover {
+    transform: rotate(3deg);
+    z-index: 0;
+
 }
 
 #your-work .project-wrapper .project-title {
     position: absolute;
-
+    background-color: var(--Red);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
 
 }
 
@@ -358,16 +395,19 @@
 
 }
 
-#contact .context-text-contant h1, #updat-event .event-text-contant h1 {
+#contact .context-text-contant h1,
+#updat-event .event-text-contant h1 {
     color: var(--fontLight);
 }
 
-#contact .context-text-contant p, #updat-event .event-text-contant p {
+#contact .context-text-contant p,
+#updat-event .event-text-contant p {
     color: var(--fontLight);
     margin-bottom: 50px;
 }
 
-#contact .context-text-contant span, #updat-event .event-text-contant h1 span {
+#contact .context-text-contant span,
+#updat-event .event-text-contant h1 span {
     color: var(--Red);
 
 }
@@ -401,8 +441,7 @@
 
 #teams .teams-about h1,
 #packages .teams-about h1,
-#recent-news .recent-news-contant h1
- {
+#recent-news .recent-news-contant h1 {
     font-size: 36px;
     text-transform: capitalize;
 
@@ -410,15 +449,13 @@
 
 #teams .teams-about h1 span,
 #packages .teams-about h1 span,
-#recent-news .recent-news-contant h1 span
- {
+#recent-news .recent-news-contant h1 span {
     color: var(--Red);
 }
 
 #teams .teams-about p,
 #packages .teams-about p,
-#recent-news .recent-news-contant p
- {
+#recent-news .recent-news-contant p {
     text-transform: capitalize;
     color: var(--list-grey);
 }
@@ -468,31 +505,101 @@
     font-weight: bold;
 
 }
+
 /* event? */
 
-#updat-event .event-contant .form-event{
-display: flex;
-text-align: center;
+#updat-event .event-contant .form-event {
+    display: flex;
+    text-align: center;
 }
-#updat-event .event-contant{
+
+#updat-event .event-contant {
     background-image: url(./assets/icon/teams/3.jpg);
     background-attachment: fixed;
     padding: 100px 0;
-   
+
 }
-#updat-event .event-contant .input-group{
+
+#updat-event .event-contant .input-group {
     padding: 20px 200px;
     margin-bottom: 30px;
 }
+
 #updat-event .event-contant .form {
-   display: flex;
- }
-#updat-event .event-contant .form input{
-   border-radius: 50px;
-   margin-left: 220px;
-   margin-right: 50px;
-   width: 400px;
-   background-color: transparent;
-   text-align: center;
-   text-transform: capitalize;
+    display: flex;
 }
+
+#updat-event .event-contant .form input {
+    /* border-radius: 50px; */
+    margin-left: 270px;
+    margin-right: 50px;
+    width: 400px;
+    /* background-color: transparent; */
+    /* text-align: center; */
+    /* text-transform: capitalize; */
+}
+
+/* recent-news */
+#recent-news .image {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+
+}
+
+#recent-news .image img {
+    width: 460px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#recent-news .image img:hover {
+    transform: scale(1.1);
+
+}
+
+#recent-news .intro {
+    display: flex;
+
+}
+
+#recent-news .intro p {
+    color: var(--list-grey);
+    text-transform: capitalize;
+}
+
+#recent-news .intro p .slide {}
+
+
+
+/* footer */
+#footer {
+    background-color: var(--fontDarkGrey);
+}
+
+.brandInput {
+    border: 1px solid var(--light-grey);
+    border-radius: 50px;
+    background-color: transparent;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 13px 0;
+
+}
+
+.brandInput:focus {
+    outline: none;
+    border: 1px solid var(--Red);
+}
+
+
+
+/* gernal things */
+/* .slide */
+/* margin bottom */
