@@ -598,7 +598,57 @@
     border: 1px solid var(--Red);
 }
 
+#footer h1 {
+    font-family: mukta;
+    color: var(--fontLight);
+    text-transform: capitalize;
+    padding: 20px 0;
+}
 
+#footer hr {
+    color: var(--light-grey);
+}
+
+#footer .about-this,
+#footer .recent-date {
+    color: var(--list-grey);
+    text-transform: capitalize;
+}
+
+#footer .contact {
+    color: var(--light-grey);
+}
+#footer .contact .dout{
+font-size: 15px;
+padding-right: 10px;
+}
+
+#footer .contact p {
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+
+#footer .contact p span {
+    margin-left: 20px;
+
+}
+
+#footer .contact p span:hover {
+    color: var(--Red);
+}
+
+#footer .recent-news-update a {
+    text-decoration: none;
+    color: var(--light-grey);
+    text-transform: capitalize;
+
+}
+
+#footer .recent-news-update a:hover {
+    color: var(--Red);
+
+}
 
 /* gernal things */
 /* .slide */
