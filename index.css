@@ -13,6 +13,8 @@
     src: url(./assets/Mukta/Mukta-Bold.ttf);
 }
 
+.slider i {}
+
 :root {
     --Red: Red;
     --fontLight: white;
@@ -20,6 +22,7 @@
     --fontDarkGrey: #151823;
     --list-grey: #666666;
     --light-grey: rgb(218, 218, 218);
+    --green: rgb(39, 177, 39);
 }
 
 /* gernal css */
@@ -85,6 +88,24 @@
     background-color: var(--Red);
     transition: all 0.5s ease;
     font-weight: bold;
+}
+
+.slider {
+    background-color: var(--Red);
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 2.5px;
+}
+
+.date:hover .slider,
+.continue-reading:hover .slider,
+.name:hover .slider {
+    width: 50px;
+    height: 5px;
+    transition: all 0.5s ease;
 }
 
 .read-more {
@@ -379,20 +400,16 @@
 #our-services .service-text-contant .servic-icon i {
     font-size: 1.8rem;
     margin-bottom: 30px;
-
 }
 
 #our-services .service-text-contant .servic-icon i:hover {
     color: var(--Red);
-
 }
 
 /* contact */
 #contact .container-fluid {
     background-color: var(--fontDarkGrey);
     padding: 60px 30px;
-
-
 }
 
 #contact .context-text-contant h1,
@@ -415,16 +432,12 @@
 #contact .contact-image-wrapper img {
     width: 400px;
     border-radius: 0px 20px 20px 0px;
-
 }
 
 #contact .context-text-contant input,
 #contact .context-text-contant textarea {
     border-radius: 20px;
 }
-
-/* #contact .context-text-contant  */
-
 
 /* teams */
 #teams {
@@ -444,7 +457,6 @@
 #recent-news .recent-news-contant h1 {
     font-size: 36px;
     text-transform: capitalize;
-
 }
 
 #teams .teams-about h1 span,
@@ -461,13 +473,10 @@
 }
 
 /* packages// */
-
 #pacages-card {
     display: flex;
     justify-content: space-around;
     padding: 30px 20px;
-
-
 }
 
 #pacages-card .packages-card {
@@ -479,14 +488,14 @@
     border-radius: 10px;
 }
 
-#pacages-card .packages-card img {
-    width: 20px;
+#pacages-card .packages-card .check {
+    margin-right: 10px;
+    color: var(--green);
 }
 
 #pacages-card h1 {
     font-size: 1.5rem;
     text-transform: capitalize;
-
 }
 
 #pacages-card .price h1 {
@@ -503,11 +512,9 @@
     margin-left: 20px;
     text-transform: capitalize;
     font-weight: bold;
-
 }
 
 /* event? */
-
 #updat-event .event-contant .form-event {
     display: flex;
     text-align: center;
@@ -517,7 +524,6 @@
     background-image: url(./assets/icon/teams/3.jpg);
     background-attachment: fixed;
     padding: 100px 0;
-
 }
 
 #updat-event .event-contant .input-group {
@@ -530,13 +536,9 @@
 }
 
 #updat-event .event-contant .form input {
-    /* border-radius: 50px; */
     margin-left: 270px;
     margin-right: 50px;
     width: 400px;
-    /* background-color: transparent; */
-    /* text-align: center; */
-    /* text-transform: capitalize; */
 }
 
 /* recent-news */
@@ -547,9 +549,6 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
-
-
-
 }
 
 #recent-news .image img {
@@ -560,22 +559,55 @@
 
 #recent-news .image img:hover {
     transform: scale(1.1);
-
 }
 
 #recent-news .intro {
     display: flex;
-
 }
 
 #recent-news .intro p {
     color: var(--list-grey);
     text-transform: capitalize;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    padding: 20px 0;
 }
 
-/* #recent-news .intro p .slide {} */
+#recent-news .intro .name a {
+    text-decoration: none;
+    color: var(--list-grey);
+}
 
+#recent-news .intro .name a:hover {
+    color: var(--Red);
+}
 
+#recent-news .about-news h3 a {
+    text-decoration: none;
+    color: var(--fontDarkGrey);
+    text-transform: capitalize;
+    font-family: cabin;
+}
+
+#recent-news .about-news h3 a:hover {
+    color: var(--Red);
+}
+
+#recent-news .about-news p {
+    color: var(--list-grey);
+}
+
+#recent-news .about-news .continue-reading a {
+    color: var(--list-grey);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#recent-news .about-news .continue-reading a:hover {
+    color: var(--Red);
+}
 
 /* footer */
 #footer {
@@ -590,7 +622,6 @@
     text-transform: capitalize;
     width: 100%;
     padding: 13px 0;
-
 }
 
 .brandInput:focus {
@@ -618,20 +649,19 @@
 #footer .contact {
     color: var(--light-grey);
 }
-#footer .contact .dout{
-font-size: 15px;
-padding-right: 10px;
+
+#footer .contact .dout {
+    font-size: 15px;
+    padding-right: 10px;
 }
 
 #footer .contact p {
     cursor: pointer;
     text-transform: capitalize;
-
 }
 
 #footer .contact p span {
     margin-left: 20px;
-
 }
 
 #footer .contact p span:hover {
@@ -642,14 +672,9 @@ padding-right: 10px;
     text-decoration: none;
     color: var(--light-grey);
     text-transform: capitalize;
-
 }
 
 #footer .recent-news-update a:hover {
     color: var(--Red);
 
 }
-
-/* gernal things */
-/* .slide */
-/* margin bottom */
