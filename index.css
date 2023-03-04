@@ -265,6 +265,7 @@
 
 #Home .home-text-contant {
     position: absolute;
+    overflow-wrap: break-word;
 }
 
 #Home .home-text-contant h1 {
@@ -328,6 +329,8 @@
     display: flex;
     justify-content: space-around;
     padding: 80px 0;
+    /* overflow: auto; */
+    flex-wrap: wrap;
 
 }
 
@@ -409,7 +412,9 @@
     background-color: var(--fontDarkGrey);
     padding: 60px 30px;
 }
-
+#contact .row{
+    overflow: auto;
+}
 #contact .context-text-contant h1,
 #updat-event .event-text-contant h1 {
     color: var(--fontLight);
@@ -475,6 +480,7 @@
     display: flex;
     justify-content: space-around;
     padding: 30px 20px;
+    flex-wrap: wrap;
 }
 
 #pacages-card .packages-card {
@@ -523,7 +529,9 @@
     background-attachment: fixed;
     padding: 100px 0;
 }
-
+/* #updat-event .event-contant .event-text-contant {
+flex-wrap: wrap;
+} */
 #updat-event .event-contant .input-group {
     padding: 20px 200px;
     margin-bottom: 30px;
@@ -531,12 +539,13 @@
 
 #updat-event .event-contant .form {
     display: flex;
+  
+    justify-content: center;
 }
 
 #updat-event .event-contant .form input {
-    margin-left: 270px;
-    margin-right: 50px;
-    width: 400px;
+    margin-right: 50px; 
+    max-width: 400px;
 }
 
 /* recent-news */
