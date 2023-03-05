@@ -216,19 +216,17 @@
 }
 
 
-#header .list-group .list-wrap {
+/* #header .list-group .list-wrap {
     margin-top: 25px;
     width: 200px;
 
-}
+} */
 
 
 #header .nav-item:hover .list-group {
     display: block;
-    /* width: 500px; */
-    /* background-image: url(./assets/icon/1.png); */
     background-color: var(--light-grey);
-    box-shadow: -2px 4px 5px var(--light-grey);
+    box-shadow: 1px 1px 1px var(--light-grey);
     border-radius: 15px;
 
 }
@@ -685,3 +683,4 @@ flex-wrap: wrap;
     color: var(--Red);
 
 }
+
